@@ -8,19 +8,37 @@
         <header>
             <h1>Company name</h1>
             <nav>
-                <a href="/">HOME</a>
-                <a href="/">ABOUT</a>
-                <a href="/">CONTACT</a>
+                <ul>
+                    <li>
+                        <a href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a href="/">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="/">CONTACT</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <aside>
-            <nav>
-                <button>HOME</button><br>
-                <button>ABOUT</button><br>
-                <button>Animals</button><br>
-                <button>HUMANS</button><br>
-                <button>CONTACT</button>
-            </nav>
+            <ul>
+                <li>
+                    <a href="/">HOME</a>
+                </li>
+                <li>
+                    <button>ABOUT</button><br>
+                </li>
+                <li>
+                    <a href="/">Animals</a>
+                </li>
+                <li>
+                    <a href="/">Humans</a>
+                </li>
+                <li>
+                    <a href="/">CONTACT</a>
+                </li>
+            </ul>
         </aside>
         <section>
             <h2>Cards Section 1</h2>
@@ -84,12 +102,12 @@
         </section>
         <section>
                 <dl>
-                        <td>Pig</td>
+                        <dt>Pig</dt>
                         <dd>A pig is any of the animals in the genus Sus, within the even-toed 
                             ungulate family Suidae. Pigs include the domestic<br> 
                             pig and its ancestor, the common Eurasian wild boar (Sus scrofa), along 
                             with other species.</dd>
-                            <td>Dog</td>
+                            <dt>Dog</dt>
                             <dd>The domestic dog (Canis lupus familiaris when considered a subspecies of 
                                 the wolf or <strong>Canis familiaris</strong> when<br> considered a distinct species) is a 
                                 member of the genus Canis (canines), which forms part of the wolf-like 
@@ -97,7 +115,7 @@
                                 the extant gray wolf are sister taxa as modern<br> wolves are not closely 
                                 related to the wolves that were first domesticated, which implies that 
                                 the direct ancestor of <br>the dog is extinct.</dd>
-                        <td>Scrooge McDuck</td>
+                        <dt>Scrooge McDuck</dt>
                         <dd>is a fictional character created in 1947 by Carl Barks during his time as a 
                             work-for-hire for The Walt Disney Company. <br>Scrooge is an elderly Scottish 
                             anthropomorphic Pekin duck with a yellow-orange bill, legs, and feet. </dd>
@@ -118,24 +136,17 @@
                 <legend>
                     Personal info
                  </legend>
-                 <div>
                     <label>Your name
                         <input type="text" placeholder="name" name="name"> 
                     </label>
-                </div>    
-                <div>
                     <label>Your gender<br>
-                    <label>
                             <input type="radio" name="question-one" value="Femalt"> Femalt
                         </label><br>
                     <label
                             ><input type="radio" name="question-one" value="Male">Male
-                    </label><br>
-                    <label>
+                    <label><br>
                         <input type="radio" name="question-one" value="Don't want to apply">Don't want to apply
                         </label>
-                    </label>
-                </div>
             </fieldset>
             <fieldset>
                 <legend>
