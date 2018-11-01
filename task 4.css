@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+html {
+font-size: 15px;
+}
+
+.body {
+display: flex;
+flex-wrap: wrap;
+}
+
+.main {
+    display: block;
+    width: 80%;
+    margin-right: -4px;
+    position: relative;
+}
+
+.icon {
+    object-fit: contain;
+}
+
+.btn {
+    border: none;
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+}
+
+.img {
+    border-radius: 50%;
+}
+/* header Strart*/
+.header {
+    width: 100%;
+    box-shadow: 0 2px 15px 0 rgba(27, 114, 194, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(167, 133, 133);
+}
+
+.header__block {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+.worker-info {
+display: flex;
+}
+
+.worker-info__img {
+margin-right: 10px;
+}
+
+.logo-img {
+    width: 148px;
+    height: 22px;
+}
+.pictgm {
+    width: 32px;
+    height: 32px;
+}
+
+}
+.key-btn {
+    width: 24px;
+    height: 24px;
+}
+.worker-info__person {
+    width: 74px;
+    height: 16px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    color: #6b7380;
+}
+.worker-info__position {
+    display: block;
+    width: 33px;
+    height: 11px;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    color: #626b79;
+}
+
+.header__quest {
+    margin-right: 10px;
+}
+
+/* header finish*/
+
+/*aside start*/
+
+.aside {
+    display: block;
+    width: 20%;
+    background-color: rgb(160, 148, 160);
+
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+}
+
+.nav__list {
+    width: 100%;
+    height: 100%;
+}
+
+.nav .list__item {
+    margin: 25px 10px;
+    width: 80%;
+    height: 2%;
+}
+
+.btn__descr {
+    font-size: 1rem;
+}
+
+/*aside finish*/
+
+/*account-info start*/
+
+.account-info {
+display: flex;
+justify-content: space-between;
+margin-left: 2.67rem;
+margin-top: 2.33rem;
+}
+
+.title-block {
+    font-size: 1.5rem;
+}
+
+.photo {
+    width: 160px;
+    height: 160px;
+    margin-top: 2.67rem; 
+}
+
+.account-info__date {
+    font-size: 0.67rem;
+}
+
+.account-info__date-line {
+    font-size: 0.67rem;
+}
+
+.field {
+    font-size: 1.33rem;
+    width: 270px;
+}
+
+.user-info {
+    display: flex;
+}
+
+.account-info__list {
+width: 270px;
+margin-top: 2.67rem;
+margin-left: 3.2rem;
+}
+
+.account-info__date--birth {
+    width: 170px;
+    font-size: 1rem;
+}
+
+.account-info__date-line {
+    display: block;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    color: #3f4044;
+}
+ .user-info li {
+     margin: 1rem;
+ }
+
+.owner-block {
+    margin-top: 5.87rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.owner-block__list {
+    margin-right: 11.7rem;
+}
+
+.owner-block__list li {
+    margin-bottom: 1rem;
+}
+
+.owner-block__calendar {
+position: relative;
+margin-right: 35px;
+margin-bottom: 20px;
+}
+
+.owner-block__info {
+    display: block;
+}
+
+
+
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+}
+
+.contact-list li {
+width: 50%;
+}
+
+.contact-info {
+width: 100%;
+position: relative;
+margin-top: 3.67rem;
+margin-left: 4rem;
+}
+
+.time-block__list {
+    display: flex;
+}
+
+.data-block {
+    margin-bottom: 4rem;
+    display: block;
+}
+
+
+.content {
+    margin-top: 3.67rem;
+    margin-left: 3.8rem;
+    margin-right: 2rem;
+}
+
+.data-block__title {
+    font-size: 1.33rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.data-block__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.data-block__desc {
+    font-size: 0.67rem;
+}
+
+.info-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-block__date {
+    width: 3.5rem;
+}
+
+.btn-submit {
+    width: 151px;
+    height: 40px;
+    color: aliceblue;
+    background-color: rgb(228, 77, 51);
+    border-radius: 3px;
+}
+
+.content__btn-submit {
+    position: relative;
+    margin-left: 72%;
+}

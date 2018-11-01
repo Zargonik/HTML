@@ -1,0 +1,202 @@
+<!DOCTYPE HYML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>resume</title>
+        <link href="reset.css" rel="stylesheet">
+        <link href="task 4.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    </head>
+    <body class="body">
+        <header class="header">
+            <img class="logo-img header__logo" src="logo.png" alt="logo">
+            <div class="header__block">
+                <button class="btn key-btn header__setings"><i class="icon fas fa-cog"></i></button>
+                <div class="worker-info heeader__worker-ifno">
+                    <img class="img pictgm worker-info__img" src="hallo.jpg">
+                    <div class="worker-info__date">
+                        <span class="worker-info__person">Ivan Ivanov</span>
+                        <span class="worker-info__position">design</span>
+                    </div>
+                </div>
+                <button class="btn key-btn header__quest"><i class="fas fa-question"></i></button>
+            </div>
+        </header>
+        <aside class="aside">
+            <nav class="nav aside__nav">
+                <ul class="list nav__list">
+                    <li class="list__item">
+                        <button class="btn icon">
+                            <i class="far fa-clock"></i>
+                            <span class="btn__descr">Time-Track</span>
+                        </button>
+                    </li>
+                    <li class="list__item">
+                        <button class="btn icon">
+                            <i class="fas fa-list-ul"></i>
+                            <span class="btn__descr">Tasks</span>
+                        </button>
+                    </li>
+                    <li class="list__item">
+                        <button class="btn icon">
+                            <i class="fas fa-chart-pie"></i>
+                            <span class="btn__descr">Reports</span>
+                        </button>
+                    </li>
+                    <li class="list__item">
+                        <button class="btn icon">
+                            <i class="far fa-user"></i>
+                            <span class="btn__descr">Users</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main">
+            <form class="form">
+                <div class="account-info">
+                    <fieldset class="user-info">
+                        <legend class="title-block account-info__title">Account Information</legend>
+                            <img class="img photo account-info__photo" src="hallo.jpg">
+                            <ul class="list account-info__list">
+                                <li class="list__item">
+                                    <label class="account-info__date"> First name
+                                    <input class="field acccount-info__field" type="text">
+                                    </label>
+                                </li>
+                                <li class="list__item">
+                                    <label class="account-info__date">Last name
+                                        <input class="field acccount-info__field" type="text">
+                                    </label>
+                                </li>
+                                <li class="list__item">
+                                    <label class="account-info__date">
+                                        <div class="account-info__date-line">Date of Birth</div>
+                                        <i class="fas fa-birthday-cake"></i>
+                                        <input class="field account-info__date account-info__date--birth" type="date">
+                                    </label>
+                                </li>
+                            </ul>
+                    </fieldset>
+                    <div class="owner-block">
+                        <ul class="list owner-block__list">
+                            <li class="list__item">
+                                <span class="account-info__date-line">Department</span>
+                                <i class="fas fa-pen-nib"></i>
+                                <select>
+                                    <option selected value="design">design</option>
+                                </select>
+                            </li>
+                            <li class="list__item">
+                                <span class="account-info__date-line">Professional level</span>
+                                <select>
+                                    <option selected value="level">Middle</option>
+                                </select>
+                            </li>
+                            <li class="list__item">
+                                <span class="account-info__date-line">Hire Date</span>
+                                <i class="far fa-calendar-alt"></i>
+                                <select>
+                                    <option selected value="date">01 Oct 2018</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <i class="icon far fa-calendar-alt owner-block__calendar"></i>
+                    </div>
+                </div>
+                <fieldset class="contact-info">
+                    <legend class="title-block contact-info__title">Contact information</legend>
+                        <ul class="list contact-list">
+                            <li class="list__item">
+                                <label class="contcat-info__message">
+                                    <div class="account-info__date-line">E-mail</div>
+                                    <i class="icon icon--message fas fa-envelope"></i>
+                                    <input class="field contact-info__field" type="email">
+                                </label>
+                            </li>
+                            <li class="list__item">
+                                <label>
+                                    <div class="account-info__date-line">Telegr</div>
+                                    <i class="icon icon--message fab fa-telegram"></i>
+                                    <input class="field contact-info__field" type="email">
+                                </label>
+                            </li>
+                            <li class="list__item">
+                                <label>
+                                    <div class="account-info__date-line">Phone namber</div>   
+                                    <i class="icon icon--message fas fa-phone"></i>
+                                    <input class="field contact-info__field" type="email">
+                                </label>
+                            </li>
+                            <li class="list__item">
+                                <label>
+                                    <div class="account-info__date-line">Skype</div>
+                                    <i class="icon icon--message fab fa-skype"></i>
+                                    <input class="field contact-info__field" type="email">
+                                </label>
+                            </li>
+                        </ul>
+                </fieldset>
+            </form>
+            <div class="content">
+                <div class="data-block">
+                    <h1 class="data-block__title">PTO (Paid time off)</h1>
+                    <ul class="list data-block__list">
+                        <li class="list__item">
+                            <span class="data-block__desc">Used</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="data-block__desc">Left</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="data-block__desc">PTO Accrual Rules</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="data-block__desc">History</span>
+                        </li>
+                    </ul>
+                    <div class="info-block">
+                        <input class="info-block__date" type="text">
+                        <input class="info-block__date" type="text">
+                        <button class="btn info-block__btn">
+                            Defaeult PTO Rules
+                            <i class="fas fa-check"></i>
+                        </button>
+                        <button class="btn info-block__btn">
+                            clock <i class="far fa-clock"></i>
+                        </button></i>
+                    </div>
+                </div>
+                <div class="data-block">
+                    <h1 class="data-block__title">Vacation </h1>
+                    <ul class="list data-block__list">
+                        <li class="list__item">
+                            <span class="data-block__desc">Used</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="data-block__desc">Left</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="data-block__desc">PTO Accrual Rules</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="data-block__desc">History</span>
+                        </li>
+                    </ul>
+                    <div class="info-block">
+                        <input class="info-block__date" type="text">
+                        <input class="info-block__date" type="text">
+                        <button class="btn info-block__btn">
+                            Defaeult PTO Rules
+                            <i class="fas fa-check"></i>
+                        </button>
+                        <button class="btn info-block__btn">
+                            clock <i class="far fa-clock"></i>
+                        </button></i>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-submit content__btn-submit" type="submit" form="form" value="Submit">Save</button>
+        </main>
+    </body>
+</html>
