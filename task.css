@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+html {
+font-size: 10px;
+}
+
+.icon {
+    object-fit: contain;
+}
+
+.btn {
+    border: none;
+}
+
+.img {
+    border-radius: 50%;
+}
+
+/* header Strart*/
+
+.logo-img {
+    width: 150px;
+    height: 25px;
+}
+
+.key-btn {
+    width: 25px;
+    height: 25px;
+}
+
+.pictgm {
+    width: 32px;
+    height: 32px;
+}
+
+.worker-info__person {
+    font-size: 1.2rem;
+}
+
+.worker-info__position {
+    font-size: 1rem;
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    width: 21%;
+    align-items: center;
+}
+
+.worker-info {
+    display: flex;
+}
+
+.worker-info__date {
+    margin-left: 1rem;
+}
+
+.header__quest {
+    margin-right: 1rem;
+}
+
+/* header finish*/
+
+/*aside start*/
+
+.aside {
+    display: block;
+    width: 20%;
+    height: 100%;
+}
+
+.aside__nav {
+
+}
+
+.aside__nav .list__item {
+    height: 45px;
+    text-align: center;
+
+}
+
+.btn__descr {
+    font-size: 1.5rem;
+}
+
+/*aside finish*/
+
+/*account-info start*/
+
+.main {
+    display: block;
+    width: 80%;
+    padding: 3.5rem 3rem 0 4rem;
+}
+
+.info-account {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-account__conteiner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-account__title {
+}
+
+.block-title {
+    display: block;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.photo {
+    width: 142px;
+    height: 142px;
+}
+
+.user-block {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.user-block__date {
+    padding-bottom: 1rem;
+}
+
+.owner-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.owner-block__date {
+    padding-bottom: 1rem;
+}
+
+.info-account__line {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.owner-block__calendar {
+    position: relative;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contcat-info__date {
+    padding-bottom: 1rem;
+    width: 50%;
+
+}
+
+.time-block__list {
+    display: flex;
+}
+
+.data-block {
+    margin-bottom: 4rem;
+    display: block;
+}
+
+
+.content {
+    margin-top: 3.67rem;
+    margin-left: 3.8rem;
+    margin-right: 2rem;
+}
+
+.data-block__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.data-block__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.data-block__desc {
+    font-size: 1rem;
+}
+
+.info-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-block__date {
+    width: 7rem;
+}
+
+.btn-submit {
+    width: 151px;
+    height: 40px;
+    color: aliceblue;
+    background-color: rgb(228, 77, 51);
+    border-radius: 3px;
+}
+
+.content__btn-submit {
+    position: relative;
+    margin-left: 72%;
+}
