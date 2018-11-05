@@ -212,12 +212,15 @@ select {
 
 .inner__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.inner li {
+    min-width: 55px;
 }
 
 .input--short {
-    width: 25px;
-    margin-left: 2%;
+    width: 55px;
 }
 
 .block-title--inner {
@@ -229,14 +232,10 @@ select {
     
 }
 
-.btn--submit {
+.btn--shine {
     background-color: #ff7954;
     width: 150px;
     height: 40px;
     color: white;
     border-radius: 2px;
-}
-
-.content__btn-submit {
-    margin-right: 7%;
 }
