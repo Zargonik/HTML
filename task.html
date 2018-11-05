@@ -9,42 +9,46 @@
     </head>
     <body class="body">
         <header class="header">
-            <img class="logo-img header__logo" src="logo.png" alt="logo">
+            <img class="logo header__logo" src="logo.png" alt="logo">
             <div class="header__block">
-                <button class="btn key-btn header__setings"><i class="icon fas fa-cog"></i></button>
-                <div class="worker-info heeader__worker-ifno">
-                    <img class="img pictgm worker-info__img" src="hallo.jpg">
-                    <div class="worker-info__date">
-                        <span class="worker-info__person">Ivan Ivanov</span>
-                        <span class="worker-info__position">design</span>
-                    </div>
+                <ul class="list header__list">
+                    <li class="list__item">
+                        <button class="btn btn--key"><i class="icon fas fa-cog"></i></button>
+                    </li>
+                </ul>
+                <div class="worker-block">
+                        <img class="img img--round worker-block__img" src="/">
+                        <div class="worker-block__info">
+                            <span class="worker-block__name">Ivan Ivanov</span>
+                            <span class="worker-block__direction">design</span>
+                        </div>
                 </div>
-                <button class="btn key-btn header__quest"><i class="fas fa-question"></i></button>
+                    <button class="btn btn--key"><i class="fas fa-question"></i></button>
             </div>
         </header>
         <aside class="aside">
             <nav class="nav aside__nav">
                 <ul class="list nav__list">
                     <li class="list__item">
-                        <button class="btn icon">
+                        <button class="btn btn--nav">
                             <i class="far fa-clock"></i>
                             <span class="btn__descr">Time-Track</span>
                         </button>
                     </li>
                     <li class="list__item">
-                        <button class="btn icon">
+                        <button class="btn btn--nav">
                             <i class="fas fa-list-ul"></i>
                             <span class="btn__descr">Tasks</span>
                         </button>
                     </li>
                     <li class="list__item">
-                        <button class="btn icon">
+                        <button class="btn btn--nav">
                             <i class="fas fa-chart-pie"></i>
                             <span class="btn__descr">Reports</span>
                         </button>
                     </li>
                     <li class="list__item">
-                        <button class="btn icon">
+                        <button class="btn btn--nav">
                             <i class="far fa-user"></i>
                             <span class="btn__descr">Users</span>
                         </button>
@@ -53,76 +57,101 @@
             </nav>
         </aside>
         <main class="main">
-            <form>
-                <fieldset class="info-account">
-                    <legend class="block-title info-account__title">Account Information</legend>
-                    <img class="img photo info-account__photo" src="hallo.jpg">
-                    <fieldset class="info-account__conteiner">
-                        <fieldset class="user-block">
-                            <label class="user-block__date">
-                                <span class="info-account__line">First name</span>
-                                <input type="text">
-                            </label>
-                            <label class="user-block__date">
-                                <span class="info-account__line">Last name</span>
-                                <input type="text">
-                            </label>
-                            <label class="user-block__date">
-                                <span class="info-account__line">Date of Birth</span>
-                                <i class="fas fa-birthday-cake"></i>
-                                <input class="field account-info__date account-info__date--birth" type="date">
-                            </label>
-                        </fieldset>
-                        <fieldset class="owner-block">
-                            <label class="owner-block__date">
-                                <span class="info-account__line">Department</span>
-                                <i class="fas fa-pen-nib"></i>
-                                <select>
-                                    <option>design</option>
-                                </select>
-                            </label>
-                            <label class="owner-block__date">
-                                <span class="info-account__line">Professional level</span>
-                                <select>
-                                    <option>Middle</option>
-                                </select>
-                            </label>
-                            <label class="owner-block__date">
-                                <span class="info-account__line">Date of Birth</span>
-                                <i class="far fa-calendar-alt"></i>
-                                <input type="date">
-                            </label>
-                            <i class="icon far fa-calendar-alt owner-block__calendar"></i>
-                        </fieldset>
+            <form class="form">
+                <div class="form__info-block">
+                    <h1 class="block-title">Account Information</h1>
+                    <fieldset class="account-info">
+                        <div class="img-block account-info__img-block">
+                            <img class="img img--round img-block__img" src="/">
+                        </div>
+                        <div class="data-block account-info__data-block">
+                            <ul class="list data-block__list">
+                                <li class="list__item">
+                                    <label class="data-block__conteiner">
+                                        <span class="data-block__conteiner-line">First name</span>
+                                    <input class="input input--info" type="text">
+                                    </label>
+                                </li>
+                                <li class="list__item">
+                                    <label class="data-block__conteiner">
+                                        <span class="data-block__conteiner-line">Last name</span>
+                                        <input class="input input--info" type="text">
+                                    </label>
+                                </li>
+                                <li class="list__item">
+                                    <label class="data-block__conteiner">
+                                        <div class="data-block__conteiner-line">Date of Birth</div>
+                                        <i class="fas fa-birthday-cake"></i>
+                                        <input class="input" type="date">
+                                        <i class="icon far fa-calendar-alt owner-block__calendar"></i>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="list data-block__list">
+                                <li class="list__item">
+                                    <span class="data-block__conteiner-line">Department</span>
+                                    <select class="input input--select">
+                                        <option selected >design</option>
+                                    </select>
+                                </li>
+                                <li class="list__item">
+                                    <span class="data-block__conteiner-line">Professional level</span>
+                                    <select class="input input--select">
+                                        <option selected>Middle</option>
+                                    </select>
+                                </li>
+                                <li class="list__item">
+                                    <label class="account-info__date">
+                                        <div class="data-block__conteiner-line">Date of Birth</div>
+                                        <i class="icon far fa-calendar-alt owner-block__calendar"></i>
+                                        <input class="input" type="date" value="2018-11-01">
+                                        <i class="icon far fa-calendar-alt owner-block__calendar"></i>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
                     </fieldset>
-                </fieldset>
-                <fieldset class="contact-info">
-                    <legend class="block-title contact-info__title">Contact information</legend>
-                    <label class="contcat-info__date">
-                        <div class="account-info__date-line">E-mail</div>
-                        <i class="icon icon--message fas fa-envelope"></i>
-                        <input class="field contact-info__field" type="email">
-                    </label>
-                    <label class="contcat-info__date">
-                        <div class="account-info__date-line">Telegr</div>
-                        <i class="icon icon--message fab fa-telegram"></i>
-                        <input class="field contact-info__field" type="email">
-                    </label>
-                    <label class="contcat-info__date">
-                        <div class="account-info__date-line">Phone namber</div>   
-                        <i class="icon icon--message fas fa-phone"></i>
-                        <input class="field contact-info__field" type="email">
-                    </label>
-                    <label class="contcat-info__date">
-                        <div class="account-info__date-line">Skype</div>
-                        <i class="icon icon--message fab fa-skype"></i>
-                        <input class="field contact-info__field" type="email">
-                    </label>
-                </fieldset>
+                </div>
+                <div class="form__contact-block">
+                    <h1 class="block-title">Contact information</h1>
+                    <fieldset class="contact-info">
+                        <ul class="list data-block">
+                            <li class="list__item">
+                                <label class="contcat-info__message">
+                                    <div class="data-block__conteiner-line">E-mail</div>
+                                    <i class="icon icon--message fas fa-envelope"></i>
+                                    <input class="input" type="email">
+                                </label>
+                            </li>
+                            <li class="list__item">
+                                <label>
+                                    <div class="data-block__conteiner-line">Telegr</div>
+                                    <i class="icon icon--message fab fa-telegram"></i>
+                                    <input class="input" type="email">
+                                </label>
+                            </li>
+                            <li class="list__item">
+                                <label>
+                                    <div class="data-block__conteiner-line">Phone namber</div>   
+                                    <i class="icon icon--message fas fa-phone"></i>
+                                    <input class="input" type="email">
+                                </label>
+                            </li>
+                            <li class="list__item">
+                                <label>
+                                    <div class="data-block__conteiner-line">Skype</div>
+                                    <i class="icon icon--message fab fa-skype"></i>
+                                    <input class="input" type="email">
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
             </form>
-            <div class="data-block">
-                    <h1 class="data-block__title">PTO (Paid time off)</h1>
-                    <ul class="list data-block__list">
+            <div class="wrapper">
+                <div class="inner">
+                    <h1 class="block-title block-title--inner">PTO (Paid time off)</h1>
+                    <ul class="list inner__container">
                         <li class="list__item">
                             <span class="data-block__desc">Used</span>
                         </li>
@@ -136,9 +165,9 @@
                             <span class="data-block__desc">History</span>
                         </li>
                     </ul>
-                    <div class="info-block">
-                        <input class="info-block__date" type="text">
-                        <input class="info-block__date" type="text">
+                    <div class="inner__container">
+                        <input class="input input--short" type="text">
+                        <input class="input input--short" type="text">
                         <button class="btn info-block__btn">
                             Defaeult PTO Rules
                             <i class="fas fa-check"></i>
@@ -148,9 +177,9 @@
                         </button></i>
                     </div>
                 </div>
-                <div class="data-block">
-                    <h1 class="data-block__title">Vacation </h1>
-                    <ul class="list data-block__list">
+                <div class="inner">
+                    <h1 class="block-title block-title--inner">Vacation </h1>
+                    <ul class="list inner__container">
                         <li class="list__item">
                             <span class="data-block__desc">Used</span>
                         </li>
@@ -164,9 +193,9 @@
                             <span class="data-block__desc">History</span>
                         </li>
                     </ul>
-                    <div class="info-block">
-                        <input class="info-block__date" type="text">
-                        <input class="info-block__date" type="text">
+                    <div class="inner__container">
+                        <input class="input input--short" type="text">
+                        <input class="input input--short" type="text">
                         <button class="btn info-block__btn">
                             Defaeult PTO Rules
                             <i class="fas fa-check"></i>
@@ -175,8 +204,10 @@
                             clock <i class="far fa-clock"></i>
                         </button></i>
                     </div>
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn--submit content__btn-submit">Save</button>
                 </div>
             </div>
-            <button class="btn btn-submit content__btn-submit" type="submit" form="form" value="Submit">Save</button>
         </main>
     </body>
